@@ -14,4 +14,4 @@ jobs:
       # - name: Change variables
       #   run: echo "VERSION=1234" >> $GITHUB_ENV
       - name: Show variables
-        run: echo $VERSION
+        run: echo '${{ vars.VERSION }}'
