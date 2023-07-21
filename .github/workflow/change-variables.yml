@@ -1,0 +1,17 @@
+name: Variables
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  change-variables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Change variables
+        run: echo "VERSION=1234" >> $GITHUB_ENV
+      - name: Show variables
+        run: echo $VERSION
