@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Change variables
-        run: echo "VERSION=1234" >> $GITHUB_ENV
+      # - name: Change variables
+      #   run: echo "VERSION=1234" >> $GITHUB_ENV
       - name: Show variables
         run: echo $VERSION
